@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OSCARS</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- favicons-->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="images/icon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/icon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/icon/favicon-128x128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="images/icon/favicon-196x196.png" sizes="196x196">
+    <meta name="application-name" content=" ">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-square70x70logo" content="images/icon/mstile-70x70.png">
+    <meta name="msapplication-TileImage" content="images/icon/mstile-144x144.png">
+    <meta name="msapplication-square150x150logo" content="images/icon/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="images/icon/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="images/icon/mstile-310x310.png">
+    <!--end favicons-->
+    <link href="styles/vendor.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target="#nav-ul">
+    <div id="loader-holder">
+      <div class="loader-inner loader-vis">
+        <div class="loader"></div>
+      </div>
+    </div>
+    <header role="banner" class="header opacity-0">
+      <div class="logo-holder"><a href="index.html" title="OSCARS"><img src="images/logo.png" alt="OSCARS"></a></div>
+      <div class="nav-button"><span class="nos"></span><span class="ncs"></span><span class="nbs"></span></div>
+    </header>
+    <div class="nav-inner">
+      <div class="nav-decor nav-decor-tl"></div>
+      <div class="nav-decor nav-decor-br"></div>
+      <div class="overlay"></div>
+      <nav class="nav">
+        <ul>
+          <li class="subnav"><a href="oscars.html" title="Oscars">Oscars<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="oscars.html#about" title="about">about</a></li>
+              <li><a href="oscars.html#events" title="events">events</a></li>
+              <li><a href="oscars.html#museum" title="museum">museum</a></li>
+              <li><a href="oscars.html#classic" title="classic">classic</a></li>
+              <li><a href="oscars.html#officers" title="officers">officers</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="winning_film.html" title="winning film">winning film<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="winning_film.html#Best" title="Best">Best</a></li>
+              <li><a href="winning_film.html#Picture" title="Picture">Picture</a></li>
+              <li><a href="winning_film.html#Directing" title="Directing">Directing</a></li>
+              <li><a href="winning_film.html#Original" title="Original">Original</a></li>
+              <li><a href="winning_film.html#Adapted" title="Adapted">Adapted</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="winner.html" title="Winner">Winner<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="winner.html#all" title="all">all</a></li>
+              <li><a href="winner.html#actor" title="actor">actor</a></li>
+              <li><a href="winner.html#actress" title="actress">actress</a></li>
+              <li><a href="winner.html#prizes" title="prizes">prizes</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="uncrowned.html" title="uncrowned king">uncrowned king<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="uncrowned.html#film" title="film">film</a></li>
+              <li><a href="uncrowned.html#star" title="star">star</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bg-all"></div>
+    <div class="left-pic opacity-0">
+      <div id="winner" class="bg-wrapper">
+        <div style="background-image: url(images/left-bg/winner.jpg);" class="bg-pic">
+          <div class="overlay"></div>
+          <div class="bg-title"><span>oscars winner</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="main opacity-0 winner fixed-subnav">
+      <nav id="page-nav" data-stanchor="all" class="subnav">
+        <ul>
+          <li><a href="#all"><span>all</span></a></li>
+          <li><a href="#actor"><span>actor</span></a></li>
+          <li><a href="#actress"><span>actress</span></a></li>
+          <li><a href="#prizes"><span>prizes</span></a></li>
+        </ul>
+      </nav>
+      <article class="com-pic-show">
+        <div id="home" class="location-1"></div>
+        <ul class="grid-block lager-up-4 medium-up-3 small-up-2">
+          <li class="columns list-pic"><a href="images/winner/winner-01.jpg" alt="William Clark Gable&lt;p class='remark'&gt;Award: It Happened One Night(1934)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: Mutiny on the Bounty(1935),Gone with the Wind(1939)&lt;/p&gt;" class="big-pic"><img src="images/winner/winner-01.jpg" alt="William Clark Gable"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>William Clark Gable</h3>
+                <p>Award: 1 time</p>
+                <p>Nominate: 2 times</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/winner/winner-02.jpg" alt="Tim Robbins&lt;p class='remark'&gt;Award: Mystic River(2004)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: Dead Man Walking(1996)&lt;/p&gt;" class="big-pic"><img src="images/winner/winner-02.jpg" alt="Tim Robbins"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Tim Robbins</h3>
+                <p>Award: 1 time</p>
+                <p>Nominate: 1 time</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/winner/winner-03.jpg" alt="Dustin Hoffman&lt;p class='remark'&gt;Award: Kramer vs. Kramer(1980),Rain Man(1989)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: The Graduate(1968),Midnight Cowboy(1970),Lenny(1975),Tootsie(1983),Wag the Dog(1998)&lt;/p&gt;" class="big-pic"><img src="images/winner/winner-03.jpg" alt="Dustin Hoffman"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Dustin Hoffman</h3>
+                <p>Award: 2 times</p>
+                <p>Nominate: 5 times</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/winner/winner-04.jpg" alt="Vivien Leigh&lt;p class='remark'&gt;Award: Gone with the Wind(1940),A Streetcar Named Desire(1957)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: &lt;/p&gt;" class="big-pic"><img src="images/winner/winner-04.jpg" alt="Vivien Leigh"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Vivien Leigh</h3>
+                <p>Award: 2 times</p>
+                <p>Nominate: 0 time</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/winner/winner-05.jpg" alt="Al Pacino&lt;p class='remark'&gt;Award: Scent of a Woman(1993)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: The Godfather(1973),Serpico(1974),The Godfather:PartⅡ(1975),Dog Day Afternoon(1976),And Justice for All(1980),Dick Tracy(1991),Glengarry Glen Ross(1993)&lt;/p&gt;" class="big-pic"><img src="images/winner/winner-05.jpg" alt="Al Pacino"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Al Pacino</h3>
+                <p>Award: 1 time</p>
+                <p>Nominate: 7 times</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/winner/winner-06.jpg" alt="Audrey Hepburn&lt;p class='remark'&gt;Award: Roman Holiday(1954)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: Sabrina(1955),The Nun's Story(1960),Breakfast at Tiffany's(1962),Wait Until Dark(1968)&lt;/p&gt;" class="big-pic"><img src="images/winner/winner-06.jpg" alt="Audrey Hepburn"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Audrey Hepburn</h3>
+                <p>Award: 1 time</p>
+                <p>Nominate: 4 times</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/winner/winner-07.jpg" alt="Tom Hanks&lt;p class='remark'&gt;Award: Philadelphia(1994),Forrest Gump(1995)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: Big(1989),Saving Private Ryan(1999),Cast Away(2001)&lt;/p&gt;" class="big-pic"><img src="images/winner/winner-07.jpg" alt="Tom Hanks"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Tom Hanks</h3>
+                <p>Award: 2 times</p>
+                <p>Nominate: 3 times</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/winner/winner-08.jpg" alt="Katharine Houghton Hepburn&lt;p class='remark'&gt;Award: Morningglory(1934),Guess Who's Coming To Dinner(1968),The Lion in Winter(1969),On Golden Pond(1982)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: AliceAdams(1936),Philadelphia(1941),Woman of the Years(1943),The African Queen(1952),Summertime(1956),The Rainmaker(1957),Suddenly, Last Summer(1960),Long Day's Journey Into Night(1963)&lt;/p&gt;" class="big-pic"><img src="images/winner/winner-08.jpg" alt="Katharine Houghton Hepburn"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Katharine Houghton Hepburn</h3>
+                <p>Award: 4 times</p>
+                <p>Nominate: 8 times</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/winner/winner-09.jpg" alt="Russell Crowe&lt;p class='remark'&gt;Award: Gladiator(2001)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: The Insider(2000),A Beautiful Mind(2002)&lt;/p&gt;" class="big-pic"><img src="images/winner/winner-09.jpg" alt="Russell Crowe"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Russell Crowe</h3>
+                <p>Award: 1 time</p>
+                <p>Nominate: 2 times</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/winner/winner-10.jpg" alt="Morgan Freeman&lt;p class='remark'&gt;Award: Million Dollar Baby(2005)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: Street Smart(1988),Driving Miss Daisy(1990),The Shawshank Redemption(1995),Invictus(2010)&lt;/p&gt;" class="big-pic"><img src="images/winner/winner-10.jpg" alt="Morgan Freeman"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Morgan Freeman</h3>
+                <p>Award: 1 time</p>
+                <p>Nominate: 4 times</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/winner/winner-11.jpg" alt="Colin Firth&lt;p class='remark'&gt;Award: The King's Speech(2011)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: A Single Man(2010)&lt;/p&gt;" class="big-pic"><img src="images/winner/winner-11.jpg" alt="Colin Firth"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Colin Firth</h3>
+                <p>Award: 1 time</p>
+                <p>Nominate: 1 time</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/winner/winner-12.jpg" alt="Renée Zellweger&lt;p class='remark'&gt;Award: Cold Mountain(2004)&lt;/p&gt;&lt;p class='remark'&gt;Nominate: Bridget Jones's Diary(2002),Chicago(2003)&lt;/p&gt;" class="big-pic"><img src="images/winner/winner-12.jpg" alt="Renée Zellweger"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Renée Zellweger</h3>
+                <p>Award: 1 time</p>
+                <p>Nominate: 2 times</p>
+              </div></a></li>
+        </ul>
+      </article>
+    </div>
+    <div class="footer-height"></div>
+    <footer role="contentinfo" class="footer clearfix">
+      <div class="grid-block medium-up-3 small-up-1 column clearfix">
+        <div class="column">
+          <h4>Find me</h4>
+          <ul class="find clearfix">
+            <li><a href="#" title="qq" target="_blank" class="to-top"><i class="icon iconfont">&#xe60a</i></a></li>
+            <li><a href="#" title="github" target="_blank" class="to-top"><i class="icon iconfont">&#xe605</i></a></li>
+            <li><a href="#" title="facebook" target="_blank" class="to-top"><i class="icon iconfont">&#xe600</i></a></li>
+            <li><a href="#" title="pinterest" target="_blank" class="to-top"><i class="icon iconfont">&#xe602</i></a></li>
+            <li><a href="#" title="linkin" target="_blank" class="to-top"><i class="icon iconfont">&#xe609</i></a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Contact info</h4>
+          <ul class="contact">
+            <li><i class="icon iconfont">&#xe60c</i>www.oscars.org</li>
+            <li><i class="icon iconfont">&#xe607</i>(310)247 - 3000</li>
+            <li><i class="icon iconfont">&#xe60f</i>8949 Wilshire Boulevard</li>
+            <li><i class="icon iconfont">&#xe60e</i>mail.oscars.org</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>careers</h4>
+          <div class="careers">
+            <p><b>The Academy</b> is a nonprofit organization with approximately 300 employees.</p>
+            <p><b>The Academy</b> is committed to equal opportunity in employment and to creating, managing and valuing diversity in its workforce.</p>
+          </div>
+        </div>
+      </div>
+      <div class="to-top-holder"><small>©2016 - Other websites All Rights Reserv</small><a href="#home" title="go top" class="to-top"><i class="icon iconfont">&#xe606;</i></a></div>
+    </footer>
+    <script src="scripts/vendor.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

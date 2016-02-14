@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OSCARS</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- favicons-->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="images/icon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/icon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/icon/favicon-128x128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="images/icon/favicon-196x196.png" sizes="196x196">
+    <meta name="application-name" content=" ">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-square70x70logo" content="images/icon/mstile-70x70.png">
+    <meta name="msapplication-TileImage" content="images/icon/mstile-144x144.png">
+    <meta name="msapplication-square150x150logo" content="images/icon/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="images/icon/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="images/icon/mstile-310x310.png">
+    <!--end favicons-->
+    <link href="styles/vendor.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target="#nav-ul">
+    <div id="loader-holder">
+      <div class="loader-inner loader-vis">
+        <div class="loader"></div>
+      </div>
+    </div>
+    <header role="banner" class="header opacity-0">
+      <div class="logo-holder"><a href="index.html" title="OSCARS"><img src="images/logo.png" alt="OSCARS"></a></div>
+      <div class="nav-button"><span class="nos"></span><span class="ncs"></span><span class="nbs"></span></div>
+    </header>
+    <div class="nav-inner">
+      <div class="nav-decor nav-decor-tl"></div>
+      <div class="nav-decor nav-decor-br"></div>
+      <div class="overlay"></div>
+      <nav class="nav">
+        <ul>
+          <li class="subnav"><a href="oscars.html" title="Oscars">Oscars<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="oscars.html#about" title="about">about</a></li>
+              <li><a href="oscars.html#events" title="events">events</a></li>
+              <li><a href="oscars.html#museum" title="museum">museum</a></li>
+              <li><a href="oscars.html#classic" title="classic">classic</a></li>
+              <li><a href="oscars.html#officers" title="officers">officers</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="winning_film.html" title="winning film">winning film<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="winning_film.html#Best" title="Best">Best</a></li>
+              <li><a href="winning_film.html#Picture" title="Picture">Picture</a></li>
+              <li><a href="winning_film.html#Directing" title="Directing">Directing</a></li>
+              <li><a href="winning_film.html#Original" title="Original">Original</a></li>
+              <li><a href="winning_film.html#Adapted" title="Adapted">Adapted</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="winner.html" title="Winner">Winner<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="winner.html#all" title="all">all</a></li>
+              <li><a href="winner.html#actor" title="actor">actor</a></li>
+              <li><a href="winner.html#actress" title="actress">actress</a></li>
+              <li><a href="winner.html#prizes" title="prizes">prizes</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="uncrowned.html" title="uncrowned king">uncrowned king<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="uncrowned.html#film" title="film">film</a></li>
+              <li><a href="uncrowned.html#star" title="star">star</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bg-all"></div>
+    <div class="main opacity-0 winning-film fixed-subnav">
+      <nav id="page-nav" data-stanchor="Best" class="subnav">
+        <ul>
+          <li><a href="#Best"><span>Best</span></a></li>
+          <li><a href="#Picture"><span>Picture</span></a></li>
+          <li><a href="#Directing"><span>Directing</span></a></li>
+          <li><a href="#Original"><span>Original</span></a></li>
+          <li><a href="#Adapted"><span>Adapted</span></a></li>
+        </ul>
+      </nav>
+      <article class="com-pic-show">
+        <div id="home" class="location-1"></div>
+        <ul class="grid-block lager-up-4 medium-up-3 small-up-2">
+          <li class="columns list-pic"><a href="images/film/film-01.jpg" alt="All Quiet on the Western Front (1931)&lt;p class='remark'&gt;Award: Picture,Directing,Original&lt;/p&gt;" class="big-pic"><img src="images/film/film-01.jpg" alt="All Quiet on the Western Front (1931)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>All Quiet on the Western Front (1931)</h3>
+                <p>Picture,Directing,Original</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-02.jpg" alt="Cimarron (1932)&lt;p class='remark'&gt;Award: Picture,Adapted&lt;/p&gt;" class="big-pic"><img src="images/film/film-02.jpg" alt="Cimarron (1932)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Cimarron (1932)</h3>
+                <p>Picture,Adapted</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-03.jpg" alt="It Happened One Night (1935)&lt;p class='remark'&gt;Award: Picture,Directing,Adapted&lt;/p&gt;" class="big-pic"><img src="images/film/film-03.jpg" alt="It Happened One Night (1935)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>It Happened One Night (1935)</h3>
+                <p>Picture,Directing,Adapted</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-04.jpg" alt="Gone with the Wind (1940)&lt;p class='remark'&gt;Award: Picture,Directing,Original&lt;/p&gt;" class="big-pic"><img src="images/film/film-04.jpg" alt="Gone with the Wind (1940)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Gone with the Wind (1940)</h3>
+                <p>Picture,Directing,Original</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-05.jpg" alt="How Green Was My Valley (1942)&lt;p class='remark'&gt;Award: Picture,Directing&lt;/p&gt;" class="big-pic"><img src="images/film/film-05.jpg" alt="How Green Was My Valley (1942)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>How Green Was My Valley (1942)</h3>
+                <p>Picture,Directing</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-06.jpg" alt="The Godfather:PartⅡ (1975)&lt;p class='remark'&gt;Award: Picture,Directing,Adapted&lt;/p&gt;" class="big-pic"><img src="images/film/film-06.jpg" alt="The Godfather:PartⅡ (1975)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>The Godfather:PartⅡ (1975)</h3>
+                <p>Picture,Directing,Adapted</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-07.jpg" alt="Driving Miss Daisy (1990)&lt;p class='remark'&gt;Award: Picture,Adapted&lt;/p&gt;" class="big-pic"><img src="images/film/film-07.jpg" alt="Driving Miss Daisy (1990)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Driving Miss Daisy (1990)</h3>
+                <p>Picture,Adapted</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-08.jpg" alt="Dances with Wolves (1991)&lt;p class='remark'&gt;Award: Picture,Directing,Original&lt;/p&gt;" class="big-pic"><img src="images/film/film-08.jpg" alt="Dances with Wolves (1991)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Dances with Wolves (1991)</h3>
+                <p>Picture,Directing,Original</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-09.jpg" alt="Schindler's List (1994)&lt;p class='remark'&gt;Award: Picture,Directing,Original&lt;/p&gt;" class="big-pic"><img src="images/film/film-09.jpg" alt="Schindler's List (1994)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Schindler's List (1994)</h3>
+                <p>Picture,Directing,Original</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-10.jpg" alt="Forrest Gump (1995)&lt;p class='remark'&gt;Award: Picture,Directing,Adapted&lt;/p&gt;" class="big-pic"><img src="images/film/film-10.jpg" alt="Forrest Gump (1995)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Forrest Gump (1995)</h3>
+                <p>Picture,Directing,Adapted</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-11.jpg" alt="Good Will Hunting (1998)&lt;p class='remark'&gt;Award: Original&lt;/p&gt;" class="big-pic"><img src="images/film/film-11.jpg" alt="Good Will Hunting (1998)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Good Will Hunting (1998)</h3>
+                <p>Original</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-12.jpg" alt="A Beautiful Mind (2002)&lt;p class='remark'&gt;Award: Picture,Directing,Adapted&lt;/p&gt;" class="big-pic"><img src="images/film/film-12.jpg" alt="A Beautiful Mind (2002)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>A Beautiful Mind (2002)</h3>
+                <p>Picture,Directing,Adapted</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-13.jpg" alt="Crash (2006)&lt;p class='remark'&gt;Award: Picture,Original&lt;/p&gt;" class="big-pic"><img src="images/film/film-13.jpg" alt="Crash (2006)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Crash (2006)</h3>
+                <p>Picture,Original</p>
+              </div></a></li>
+          <li class="columns list-pic"><a href="images/film/film-14.jpg" alt="Brokeback Mountain (2006)&lt;p class='remark'&gt;Award: Directing,Adapted&lt;/p&gt;" class="big-pic"><img src="images/film/film-14.jpg" alt="Brokeback Mountain (2006)"><i class="icon iconfont">&#xe60d;</i>
+              <div class="text"><i class="iconfont">&#xe610;</i>
+                <h3>Brokeback Mountain (2006)</h3>
+                <p>Directing,Adapted</p>
+              </div></a></li>
+        </ul>
+      </article>
+    </div>
+    <div class="footer-height winning-film"></div>
+    <footer role="contentinfo" class="footer clearfix">
+      <div class="grid-block medium-up-3 small-up-1 column clearfix">
+        <div class="column">
+          <h4>Find me</h4>
+          <ul class="find clearfix">
+            <li><a href="#" title="qq" target="_blank" class="to-top"><i class="icon iconfont">&#xe60a</i></a></li>
+            <li><a href="#" title="github" target="_blank" class="to-top"><i class="icon iconfont">&#xe605</i></a></li>
+            <li><a href="#" title="facebook" target="_blank" class="to-top"><i class="icon iconfont">&#xe600</i></a></li>
+            <li><a href="#" title="pinterest" target="_blank" class="to-top"><i class="icon iconfont">&#xe602</i></a></li>
+            <li><a href="#" title="linkin" target="_blank" class="to-top"><i class="icon iconfont">&#xe609</i></a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Contact info</h4>
+          <ul class="contact">
+            <li><i class="icon iconfont">&#xe60c</i>www.oscars.org</li>
+            <li><i class="icon iconfont">&#xe607</i>(310)247 - 3000</li>
+            <li><i class="icon iconfont">&#xe60f</i>8949 Wilshire Boulevard</li>
+            <li><i class="icon iconfont">&#xe60e</i>mail.oscars.org</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>careers</h4>
+          <div class="careers">
+            <p><b>The Academy</b> is a nonprofit organization with approximately 300 employees.</p>
+            <p><b>The Academy</b> is committed to equal opportunity in employment and to creating, managing and valuing diversity in its workforce.</p>
+          </div>
+        </div>
+      </div>
+      <div class="to-top-holder"><small>©2016 - Other websites All Rights Reserv</small><a href="#home" title="go top" class="to-top"><i class="icon iconfont">&#xe606;</i></a></div>
+    </footer>
+    <script src="scripts/vendor.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

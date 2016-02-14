@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OSCARS</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- favicons-->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="images/icon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/icon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/icon/favicon-128x128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="images/icon/favicon-196x196.png" sizes="196x196">
+    <meta name="application-name" content=" ">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-square70x70logo" content="images/icon/mstile-70x70.png">
+    <meta name="msapplication-TileImage" content="images/icon/mstile-144x144.png">
+    <meta name="msapplication-square150x150logo" content="images/icon/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="images/icon/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="images/icon/mstile-310x310.png">
+    <!--end favicons-->
+    <link href="styles/vendor.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target="#nav-ul">
+    <div id="loader-holder">
+      <div class="loader-inner loader-vis">
+        <div class="loader"></div>
+      </div>
+    </div>
+    <header role="banner" class="header opacity-0">
+      <div class="logo-holder"><a href="index.html" title="OSCARS"><img src="images/logo.png" alt="OSCARS"></a></div>
+      <div class="nav-button"><span class="nos"></span><span class="ncs"></span><span class="nbs"></span></div>
+    </header>
+    <div class="nav-inner">
+      <div class="nav-decor nav-decor-tl"></div>
+      <div class="nav-decor nav-decor-br"></div>
+      <div class="overlay"></div>
+      <nav class="nav">
+        <ul>
+          <li class="subnav"><a href="oscars.html" title="Oscars">Oscars<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="oscars.html#about" title="about">about</a></li>
+              <li><a href="oscars.html#events" title="events">events</a></li>
+              <li><a href="oscars.html#museum" title="museum">museum</a></li>
+              <li><a href="oscars.html#classic" title="classic">classic</a></li>
+              <li><a href="oscars.html#officers" title="officers">officers</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="winning_film.html" title="winning film">winning film<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="winning_film.html#Best" title="Best">Best</a></li>
+              <li><a href="winning_film.html#Picture" title="Picture">Picture</a></li>
+              <li><a href="winning_film.html#Directing" title="Directing">Directing</a></li>
+              <li><a href="winning_film.html#Original" title="Original">Original</a></li>
+              <li><a href="winning_film.html#Adapted" title="Adapted">Adapted</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="winner.html" title="Winner">Winner<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="winner.html#all" title="all">all</a></li>
+              <li><a href="winner.html#actor" title="actor">actor</a></li>
+              <li><a href="winner.html#actress" title="actress">actress</a></li>
+              <li><a href="winner.html#prizes" title="prizes">prizes</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="uncrowned.html" title="uncrowned king">uncrowned king<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="uncrowned.html#film" title="film">film</a></li>
+              <li><a href="uncrowned.html#star" title="star">star</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bg-all uncrowned"></div>
+    <div class="left-pic opacity-0">
+      <div id="uncrowned_film" class="bg-wrapper">
+        <div style="background-image: url(images/left-bg/uncrowned-1.jpg);" class="bg-pic">
+          <div class="overlay"></div>
+          <div class="bg-title"><span>film</span></div>
+        </div>
+      </div>
+      <div id="uncrowned_star" class="bg-wrapper">
+        <div style="background-image: url(images/left-bg/uncrowned-2.jpg);" class="bg-pic">
+          <div class="overlay"></div>
+          <div class="bg-title"><span>star</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="com-theme opacity-0 uncrowned-theme">
+      <div data-top-bottom="transform: translateY(450px);" data-bottom-top="transform: translateY(-450px);" class="section-parallax">
+        <div class="bg-title">
+          <div data-top-bottom="transform: translateY(-150px);" data-bottom-top="transform: translateY(150px);" class="title">
+            <h1>uncrowned king</h1><a href="#home">Let's start</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main opacity-0 uncrowned">
+      <nav id="page-nav" data-stanchor="film" class="subnav">
+        <ul>
+          <li><a href="#film"><span>film</span></a></li>
+          <li><a href="#star"><span>star</span></a></li>
+        </ul>
+      </nav>
+      <article class="common-1 list-film">
+        <div id="home" class="location-1"></div>
+        <div id="film" class="location-1"></div>
+        <div class="container">
+          <div class="article-title">
+            <div data-top-bottom="transform: translateY(-300px);" data-bottom-top="transform: translateY(300px);" class="big-column">The Shawshank Redemption</div>
+            <h6>best</h6>
+            <h2>The Shawshank Redemption</h2>
+          </div>
+          <div class="content">
+            <h4>Hope is a good thing, maybe the best of things, and no good thing ever dies.</h4>
+            <h5>AFI's <span>100</span> Years...<span>100</span> Movies</h5>
+            <div class="un-pic">
+              <div class="customNavigation fixed"><a class="next-slide"><i class="icon iconfont">&#xe603;</i></a><a class="prev-slide"><i class="icon iconfont">&#xe60b;</i></a></div>
+              <div class="owl-carousel owl-theme pic-list item">
+                <div class="single"><img src="images/uncrowned/shawshank-1.jpg" alt="The Shawshank Redemption"></div>
+                <div class="single"><img src="images/uncrowned/shawshank-2.jpg" alt="The Shawshank Redemption"></div>
+                <div class="single"><img src="images/uncrowned/shawshank-3.jpg" alt="The Shawshank Redemption"></div>
+              </div>
+            </div>
+            <div class="row plot">
+              <div class="medium-8 small-12 columns"><p>The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont, and starring Tim Robbins and Morgan Freeman. Adapted from the Stephen King novella Rita Hayworth and Shawshank Redemption, the film tells the story of Andy Dufresne, a banker who is sentenced to life in Shawshank State Penitentiary for the murder of his wife and her lover, despite his claims of innocence. During his time at the prison, he befriends a fellow inmate, Ellis Boyd Red Redding, and finds himself protected by the guards after the warden begins using him in his money-laundering operation...</p></div>
+              <div class="medium-4 small-12 columns">
+                <div class="info">
+                  <p><span>Directed :</span>Frank Darabont</p>
+                  <p><span>Screenplay :</span>Frank Darabont</p>
+                  <p><span>Writers :</span>Stephen King</p>
+                  <p><span>Novel :</span>Shawshank Redemption</p>
+                </div>
+              </div>
+            </div>
+            <div class="starring"><span>Starring :</span><b>Tim Robbins ,</b><b>Morgan Freeman ,</b><b>Bob Gunton ,</b><b>William Sadler ,</b><b>Clancy Brown ,</b><b>Gil Bellows ,</b><b>James Whitmore ,</b>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="common-1 list-film">
+        <div class="container">
+          <div class="article-title">
+            <div data-top-bottom="transform: translateY(-300px);" data-bottom-top="transform: translateY(300px);" class="big-column">Bridget Jones's Diary</div>
+            <h6>happiest</h6>
+            <h2>Bridget Jones's Diary</h2>
+          </div>
+          <div class="content">
+            <h4>A British woman is determined to improve herself while she looks for love in a year in which she keeps a personal diary.</h4>
+            <h5>In 2003, the novel was listed at number <span>75</span> on the BBC's survey The Big Read.</h5>
+            <div class="un-pic">
+              <div class="customNavigation fixed"><a class="next-slide"><i class="icon iconfont">&#xe603;</i></a><a class="prev-slide"><i class="icon iconfont">&#xe60b;</i></a></div>
+              <div class="owl-carousel owl-theme pic-list item">
+                <div class="single"><img src="images/uncrowned/bridget-1.jpg" alt="Bridget Jones's Diary"></div>
+                <div class="single"><img src="images/uncrowned/bridget-2.jpg" alt="Bridget Jones's Diary"></div>
+                <div class="single"><img src="images/uncrowned/bridget-3.jpg" alt="Bridget Jones's Diary"></div>
+              </div>
+            </div>
+            <div class="row plot">
+              <div class="medium-8 small-12 columns"><p>Bridget Jones's Diary is a 1996 novel by Helen Fielding. Written in the form of a personal diary, the novel chronicles a year in the life of Bridget Jones, a thirty-something single working woman living in London. She writes about her career, self-image, vices, family, friends, and romantic relationships.</p><p>By 2006, the book had sold over two million copies worldwide.[1] A sequel, Bridget Jones: The Edge of Reason, was published in 1999. Another sequel, Bridget Jones: Mad About the Boy, came out in 2013.</p></div>
+              <div class="medium-4 small-12 columns">
+                <div class="info">
+                  <p><span>Directed :</span>Sharon Maguire</p>
+                  <p><span>Screenplay :</span>Helen Fielding </p>
+                  <p><span>Writers :</span>Helen Fielding</p>
+                  <p><span>Novel :</span>Bridget Jones's Diary</p>
+                </div>
+              </div>
+            </div>
+            <div class="starring"><span>Starring :</span><b>Renée Zellweger ,</b><b>Colin Firth ,</b><b>Hugh Grant ,</b><b>Gemma Jones ,</b><b>Jim Broadbent ,</b><b>Sally Phillips ,</b><b>Paul Brooke ,</b>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="common-1 list-star">
+        <div id="star" class="location"></div>
+        <div class="container">
+          <div class="article-title">
+            <div data-top-bottom="transform: translateY(-300px);" data-bottom-top="transform: translateY(300px);" class="big-column">Robert Taylor</div>
+            <h6>charisma</h6>
+            <h2>Robert Taylor</h2>
+          </div>
+          <div class="content">
+            <h4>(August 5, 1911 – June 8, 1969) was an American film and television actor who was one of the most popular leading men of his time.</h4>
+            <h5>The Man with the Perfect Profile,The New King</h5>
+            <div class="un-pic">
+              <div class="customNavigation fixed"><a class="next-slide"><i class="icon iconfont">&#xe603;</i></a><a class="prev-slide"><i class="icon iconfont">&#xe60b;</i></a></div>
+              <div class="owl-carousel owl-theme pic-list item">
+                <div class="single"><img src="images/uncrowned/robert-1.jpg" alt="Robert Taylor"></div>
+                <div class="single"><img src="images/uncrowned/robert-2.jpg" alt="Robert Taylor"></div>
+                <div class="single"><img src="images/uncrowned/robert-3.jpg" alt="Robert Taylor"></div>
+              </div>
+            </div>
+            <div class="plot"><p>Arlington Brugh Spangler name. Nebraska, music, university major down after the teacher entered the cello follow California wave mona university. His performance in the school of film earned him a chance, therefore the audition and MGM signing contract. Known as 'the most perfect profile with actor', and clark gable and contemporary screen as the most popular romantic valentine. Married twice before (Barbara Ursula and Stanley's silk). 69 years because of lung cancer death</p></div>
+            <div class="filmography"><span>Filmography :</span><b>Camille(1936) ,</b><b>A Yank at Oxford(1938) ,</b><b>Waterloo Bridge(1940) ,</b>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="common-1 list-star">
+        <div class="container">
+          <div class="article-title">
+            <div data-top-bottom="transform: translateY(-300px);" data-bottom-top="transform: translateY(300px);" class="big-column">Harrison Ford</div>
+            <h6>charming</h6>
+            <h2>Harrison Ford</h2>
+          </div>
+          <div class="content">
+            <h4>Was a master carpenter before becoming a movie star, a craft he still does as a hobby.</h4>
+            <h5>Chosen by Empire magazine as one of the <span>100</span> Sexiest Stars in film history (#15) (1995).</h5>
+            <div class="un-pic">
+              <div class="customNavigation fixed"><a class="next-slide"><i class="icon iconfont">&#xe603;</i></a><a class="prev-slide"><i class="icon iconfont">&#xe60b;</i></a></div>
+              <div class="owl-carousel owl-theme pic-list item">
+                <div class="single"><img src="images/uncrowned/ford-1.jpg" alt="Harrison Ford"></div>
+                <div class="single"><img src="images/uncrowned/ford-2.jpg" alt="Harrison Ford"></div>
+                <div class="single"><img src="images/uncrowned/ford-3.jpg" alt="Harrison Ford"></div>
+              </div>
+            </div>
+            <div class="plot"><p>In 1997, Ford was ranked No. 1 in Empire's 'The Top 100 Movie Stars of All Time' list. The U.S. domestic box office grosses of Ford's films total over US$4.7 billion, with worldwide grosses surpassing $6 billion, making Ford the highest-grossing U.S. domestic box-office star. When adjusted for inflation, Ford has appeared in five of the top thirty highest-grossing movies of the U.S. box office, the most for any actress/actor.</p></div>
+            <div class="filmography"><span>Filmography :</span><b>The Fugitive(1993) ,</b><b>Air Force One(1997) ,</b><b>K*19: The Widowmaker(2002) ,</b>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="footer-height"></div>
+    <footer role="contentinfo" class="footer clearfix">
+      <div class="grid-block medium-up-3 small-up-1 column clearfix">
+        <div class="column">
+          <h4>Find me</h4>
+          <ul class="find clearfix">
+            <li><a href="#" title="qq" target="_blank" class="to-top"><i class="icon iconfont">&#xe60a</i></a></li>
+            <li><a href="#" title="github" target="_blank" class="to-top"><i class="icon iconfont">&#xe605</i></a></li>
+            <li><a href="#" title="facebook" target="_blank" class="to-top"><i class="icon iconfont">&#xe600</i></a></li>
+            <li><a href="#" title="pinterest" target="_blank" class="to-top"><i class="icon iconfont">&#xe602</i></a></li>
+            <li><a href="#" title="linkin" target="_blank" class="to-top"><i class="icon iconfont">&#xe609</i></a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Contact info</h4>
+          <ul class="contact">
+            <li><i class="icon iconfont">&#xe60c</i>www.oscars.org</li>
+            <li><i class="icon iconfont">&#xe607</i>(310)247 - 3000</li>
+            <li><i class="icon iconfont">&#xe60f</i>8949 Wilshire Boulevard</li>
+            <li><i class="icon iconfont">&#xe60e</i>mail.oscars.org</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>careers</h4>
+          <div class="careers">
+            <p><b>The Academy</b> is a nonprofit organization with approximately 300 employees.</p>
+            <p><b>The Academy</b> is committed to equal opportunity in employment and to creating, managing and valuing diversity in its workforce.</p>
+          </div>
+        </div>
+      </div>
+      <div class="to-top-holder"><small>©2016 - Other websites All Rights Reserv</small><a href="#home" title="go top" class="to-top"><i class="icon iconfont">&#xe606;</i></a></div>
+    </footer>
+    <script src="scripts/vendor.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+      var ol = $(".pic-list");
+      	ol.owlCarousel({
+      		items: 1,
+      		nav: false,
+      		dots:false,
+      	});
+      	$(".customNavigation a.next-slide").on("click", function() {
+      			$(this).closest(".un-pic").find('.owl-carousel').trigger("next.owl.carousel");
+      	});
+      	$(".customNavigation a.prev-slide").on("click", function() {
+      			$(this).closest(".un-pic").find('.owl-carousel').trigger("prev.owl.carousel");
+      	});
+    </script>
+  </body>
+</html>

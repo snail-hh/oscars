@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OSCARS</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- favicons-->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="images/icon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/icon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/icon/favicon-128x128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="images/icon/favicon-196x196.png" sizes="196x196">
+    <meta name="application-name" content=" ">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-square70x70logo" content="images/icon/mstile-70x70.png">
+    <meta name="msapplication-TileImage" content="images/icon/mstile-144x144.png">
+    <meta name="msapplication-square150x150logo" content="images/icon/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="images/icon/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="images/icon/mstile-310x310.png">
+    <!--end favicons-->
+    <link href="styles/vendor.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target="#nav-ul">
+    <div id="loader-holder">
+      <div class="loader-inner loader-vis">
+        <div class="loader"></div>
+      </div>
+    </div>
+    <header role="banner" class="header opacity-0">
+      <div class="logo-holder"><a href="index.html" title="OSCARS"><img src="images/logo.png" alt="OSCARS"></a></div>
+      <div class="nav-button"><span class="nos"></span><span class="ncs"></span><span class="nbs"></span></div>
+    </header>
+    <div class="nav-inner">
+      <div class="nav-decor nav-decor-tl"></div>
+      <div class="nav-decor nav-decor-br"></div>
+      <div class="overlay"></div>
+      <nav class="nav">
+        <ul>
+          <li class="subnav"><a href="oscars.html" title="Oscars">Oscars<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="oscars.html#about" title="about">about</a></li>
+              <li><a href="oscars.html#events" title="events">events</a></li>
+              <li><a href="oscars.html#museum" title="museum">museum</a></li>
+              <li><a href="oscars.html#classic" title="classic">classic</a></li>
+              <li><a href="oscars.html#officers" title="officers">officers</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="winning_film.html" title="winning film">winning film<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="winning_film.html#Best" title="Best">Best</a></li>
+              <li><a href="winning_film.html#Picture" title="Picture">Picture</a></li>
+              <li><a href="winning_film.html#Directing" title="Directing">Directing</a></li>
+              <li><a href="winning_film.html#Original" title="Original">Original</a></li>
+              <li><a href="winning_film.html#Adapted" title="Adapted">Adapted</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="winner.html" title="Winner">Winner<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="winner.html#all" title="all">all</a></li>
+              <li><a href="winner.html#actor" title="actor">actor</a></li>
+              <li><a href="winner.html#actress" title="actress">actress</a></li>
+              <li><a href="winner.html#prizes" title="prizes">prizes</a></li>
+            </ul>
+          </li>
+          <li class="subnav"><a href="uncrowned.html" title="uncrowned king">uncrowned king<i class="icon iconfont subnavicon">&#xe601;</i></a>
+            <ul>
+              <li><a href="uncrowned.html#film" title="film">film</a></li>
+              <li><a href="uncrowned.html#star" title="star">star</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bg-all"></div>
+    <div class="left-pic opacity-0">
+      <div id="oscars_about" class="bg-wrapper">
+        <div style="background-image: url(images/left-bg/oscars-1.jpg);" class="bg-pic">
+          <div class="overlay"></div>
+          <div class="bg-title"><span>about oscars</span></div>
+        </div>
+      </div>
+      <div id="oscars_events" class="bg-wrapper">
+        <div style="background-image: url(images/left-bg/oscars-2.jpg);" class="bg-pic">
+          <div class="overlay"></div>
+          <div class="bg-title"><span>events</span></div>
+        </div>
+      </div>
+      <div id="oscars_museum" class="bg-wrapper">
+        <div style="background-image: url(images/left-bg/oscars-3.jpg);" class="bg-pic">
+          <div class="overlay"></div>
+          <div class="bg-title"><span>museum</span></div>
+        </div>
+      </div>
+      <div id="oscars_classic" class="bg-wrapper">
+        <div style="background-image: url(images/left-bg/oscars-4.jpg);" class="bg-pic">
+          <div class="overlay"></div>
+          <div class="bg-title"><span>classic</span></div>
+        </div>
+      </div>
+      <div id="oscars_officers" class="bg-wrapper">
+        <div style="background-image: url(images/left-bg/oscars-5.jpg);" class="bg-pic">
+          <div class="overlay"></div>
+          <div class="bg-title"><span>officers</span></div>
+        </div>
+      </div>
+      <div id="oscars_contact" class="bg-wrapper">
+        <div style="background-image: url(images/left-bg/oscars-6.jpg);" class="bg-pic">
+          <div class="overlay"></div>
+          <div class="bg-title"><span>contact</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay-oscars opacity-0"></div>
+    <div class="com-theme opacity-0 oscars-theme">
+      <div data-top-bottom="transform: translateY(450px);" data-bottom-top="transform: translateY(-450px);" class="section-parallax">
+        <div class="bg-title">
+          <div data-top-bottom="transform: translateY(-150px);" data-bottom-top="transform: translateY(150px);" class="title">
+            <h1>The Academy Award of Merit</h1><a href="#home">Let's start</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main opacity-0 oscars">
+      <nav id="page-nav" data-stanchor="about" class="subnav">
+        <ul>
+          <li><a href="#about"><span>about</span></a></li>
+          <li><a href="#events"><span>events</span></a></li>
+          <li><a href="#museum"><span>museum</span></a></li>
+          <li><a href="#classic"><span>classic</span></a></li>
+          <li><a href="#officers"><span>officers</span></a></li>
+        </ul>
+      </nav>
+      <article class="common-1 about">
+        <div id="home" class="location-1"></div>
+        <div id="about" class="location-1"></div>
+        <div class="container">
+          <div class="article-title">
+            <div data-top-bottom="transform: translateY(-300px);" data-bottom-top="transform: translateY(300px);" class="big-column">About oscars</div>
+            <h6>What is it</h6>
+            <h2>About oscars</h2>
+          </div>
+          <div class="row">
+            <div class="medium-5 columns about-iamge"><img src="images/oscars/oscars-about.jpg" alt="OSCARS"></div>
+            <div class="medium-7 columns about-text">
+              <h4>The Oscars</h4>
+              <h3>The Academy of Motion <span>Picture Arts</span> and Sciences</h3><p>The Academy of Motion Picture Arts and Sciences is the world's preeminent movie related organization, comprised of 7,000+ accomplished men and women working in cinema.</p><p>We recognize and uphold excellence in the motion picture arts and sciences, inspire imagination, and connect the world through the medium of motion pictures. </p><a href="#" title="View Work" class="button view-work"><i class="icon iconfont">&#xe603;</i><span>View Work</span></a>
+            </div>
+          </div>
+          <div class="row stat">
+            <div class="medium-3 small-6 columns title">
+              <h5>Some facts</h5>
+            </div>
+            <ul class="medium-9 small-12 columns grid-block medium-up-3 small-up-1">
+              <li class="column stats animaper"><b data-content="80" data-num="80" class="num">0</b>
+                <h6>Awards</h6>
+              </li>
+              <li class="column stats animaper"><b data-content="100" data-num="100" class="num">0</b>
+                <h6>countries</h6>
+              </li>
+              <li class="column stats animaper"><b data-content="999" data-num="999" class="num">0</b>
+                <h6>films</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="common-1 events">
+        <div id="events" class="location"></div>
+        <div class="container">
+          <div class="article-title">
+            <div data-top-bottom="transform: translateY(-300px);" data-bottom-top="transform: translateY(300px);" class="big-column">Events</div>
+            <h6>Did you know</h6>
+            <h2>Events</h2>
+          </div>
+          <ul data-accordion role="tablist" class="accordion list">
+            <li class="accordion-item is-active"><a id="panel1d-heading" href="#panel1d0" role="tab" aria-controls="panel1d" class="accordion-title">
+                <div class="text"><i class="icon iconfont">&#xe608;</i><span>January 2016</span> - Academy Film Archive Screenings</div></a>
+              <div id="panel1d0" data-tab-content class="accordion-content">
+                <h6>borrowing venues</h6>
+                <ul>
+                  <li>Iron Monkey</li>
+                  <li>Manchester</li>
+                  <li>Explorers</li>
+                </ul><p>The Academy Film Archive lends hundreds of prints every year to venues around the world. Below are listings for upcoming screenings. This page will be updated on a monthly basis and may not reflect recent additions, cancellations, or changes made by borrowing venues.</p>
+              </div>
+            </li>
+            <li class="accordion-item"><a id="panel1d-heading" href="#panel1d1" role="tab" aria-controls="panel1d" class="accordion-title">
+                <div class="text"><i class="icon iconfont">&#xe608;</i><span>May 2015</span> - Cinerama Holiday</div></a>
+              <div id="panel1d1" data-tab-content class="accordion-content">
+                <h6>60th Anniversary</h6>
+                <ul>
+                  <li>Samuel Goldwyn Theater</li>
+                </ul><p>Cinema has endured for decades in the face of competing visual storytelling mediums. In connection with our event The New Audience: Moviegoing in the  Connected World, discover how studios and filmmakers – long before tablets, smartphones and the Internet – responded as audiences began trading regular visits to the movies for the ease and affordability of the first small screen: television. In response, numerous widescreen cinematic formats were rolled out around the world and capitalized on the breathtaking width of the projected image, not to mention the heightened fidelity of stereophonic sound, to achieve effects far beyond the reach of TV sets.</p>
+              </div>
+            </li>
+            <li class="accordion-item"><a id="panel1d-heading" href="#panel1d2" role="tab" aria-controls="panel1d" class="accordion-title">
+                <div class="text"><i class="icon iconfont">&#xe608;</i><span>May 2014</span> - 40th Anniversary Screening Bread and  Chocolate</div></a>
+              <div id="panel1d2" data-tab-content class="accordion-content">
+                <h6>Italian with English subtitles.</h6>
+                <ul>
+                  <li>Linwood Dunn Theater</li>
+                </ul><p>In conjunction with “Nino!,” a worldwide celebration of the work of Italian actor Nino Manfredi (1921-2004), the Academy presents a new restoration of the film that solidified his reputation as an international star.</p>
+              </div>
+            </li>
+            <li class="accordion-item"><a id="panel1d-heading" href="#panel1d3" role="tab" aria-controls="panel1d" class="accordion-title">
+                <div class="text"><i class="icon iconfont">&#xe608;</i><span>May 2013</span> - The Academy Explores a Bold New World of Storytelling</div></a>
+              <div id="panel1d3" data-tab-content class="accordion-content">
+                <h6>Push the envelope</h6>
+                <ul>
+                  <li>Beverly Hills, CA </li>
+                </ul><p>All of the participants finally united on the stage for brief closing thoughts. They emphasized an area in which technology has perhaps ushered in the biggest changes in their approach – artistic collaboration –enabling people to work efficiently miles apart from each other and even from home. However, the basic building blocks of storytelling remain in place, with adjustments to fit the times. Lindelof summed it up with a matched pair of axioms: “Push the envelope, but if it ain’t broke, don’t fix it.” </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="common-1 museum">
+        <div id="museum" class="location"></div>
+        <div class="container">
+          <div class="article-title">
+            <div data-top-bottom="transform: translateY(-300px);" data-bottom-top="transform: translateY(300px);" class="big-column">Museum</div>
+            <h6>Support</h6>
+            <h2>Museum</h2>
+          </div>
+          <div class="list">
+            <div class="customNavigation"><a class="next-slide"><i class="icon iconfont">&#xe603;</i></a><a class="prev-slide"><i class="icon iconfont">&#xe60b;</i></a></div>
+            <div class="grid-block owl-carousel owl-theme museum-list">
+              <div class="item list-pic"><a href="images/oscars/oscars-museum-1.jpg" alt="about" class="big-pic"><img src="images/oscars/oscars-museum-1.jpg" alt="about"><i class="icon iconfont">&#xe60d;</i></a>
+                <h5>about</h5><p>A world's premier museum devoted to exploring and curating the history and future of the moving image.</p>
+                <ul>
+                  <li>galleries</li>
+                  <li>exhibition spaces</li>
+                  <li>movie theaters</li>
+                  <li>special event spaces</li>
+                </ul>
+                <h6>LACMA</h6>
+              </div>
+              <div class="item list-pic"><a href="images/oscars/oscars-museum-2.jpg" alt="Building" class="big-pic"><img src="images/oscars/oscars-museum-2.jpg" alt="Building"><i class="icon iconfont">&#xe60d;</i></a>
+                <h5>Building</h5><p>A world's premier museum devoted to exploring and curating the history and future of the moving image.</p>
+                <ul>
+                  <li>industry</li>
+                  <li>art</li>
+                  <li>technology</li>
+                  <li>created</li>
+                </ul>
+                <h6>design vision</h6>
+              </div>
+              <div class="item list-pic"><a href="images/oscars/oscars-museum-3.jpg" alt="Support" class="big-pic"><img src="images/oscars/oscars-museum-3.jpg" alt="Support"><i class="icon iconfont">&#xe60d;</i></a>
+                <h5>Support</h5><p>A world's premier museum devoted to exploring and curating the history and future of the moving image.</p>
+                <ul>
+                  <li>$388 million</li>
+                  <li>Bob Iger</li>
+                  <li>Annette Bening</li>
+                  <li>Tom Hanks</li>
+                </ul>
+                <h6>(323)930-5452</h6>
+              </div>
+              <div class="item list-pic"><a href="images/oscars/oscars-museum-4.jpg" alt="Contact" class="big-pic"><img src="images/oscars/oscars-museum-4.jpg" alt="Contact"><i class="icon iconfont">&#xe60d;</i></a>
+                <h5>Contact</h5><p>A world's premier museum devoted to exploring and curating the history and future of the moving image.</p>
+                <ul>
+                  <li>(310)247-3000</li>
+                  <li>(310)247-3623</li>
+                  <li>(310)247-3090</li>
+                  <li>Mailing</li>
+                </ul>
+                <h6>Press &amp; Media</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="common-1 classic">
+        <div id="classic" class="location"></div>
+        <div data-skcolor="#8F8F8F" class="container piechart-holder animaper">
+          <div class="article-title">
+            <div data-top-bottom="transform: translateY(-300px);" data-bottom-top="transform: translateY(300px);" class="big-column">Most awards</div>
+            <h6>Winning film</h6>
+            <h2>Most awards</h2>
+          </div>
+          <div class="row item">
+            <h4>Titanic</h4>
+            <div class="medium-4 columns"><span data-percent="46" class="chart"><span class="percent">46</span></span></div>
+            <div class="medium-8 columns">
+              <ul class="skillbar-box animaper">
+                <li>
+                  <div class="text">
+                    <h6>Finalist</h6><span>58</span>
+                  </div>
+                  <div data-percent="58" class="skillbar-bg">
+                    <div class="custom-skillbar"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="text">
+                    <h6>Major awards</h6><span>33</span>
+                  </div>
+                  <div data-percent="33" class="skillbar-bg">
+                    <div class="custom-skillbar"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="text">
+                    <h6>Golden Globe Awards</h6><span>27</span>
+                  </div>
+                  <div data-percent="27" class="skillbar-bg">
+                    <div class="custom-skillbar"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row item">
+            <h4>Ben Hur</h4>
+            <div class="medium-4 columns"><span data-percent="46" class="chart"><span class="percent">46</span></span></div>
+            <div class="medium-8 columns">
+              <ul class="skillbar-box animaper">
+                <li>
+                  <div class="text">
+                    <h6>Finalist</h6><span>46</span>
+                  </div>
+                  <div data-percent="46" class="skillbar-bg">
+                    <div class="custom-skillbar"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="text">
+                    <h6>Major awards</h6><span>67</span>
+                  </div>
+                  <div data-percent="67" class="skillbar-bg">
+                    <div class="custom-skillbar"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="text">
+                    <h6>Golden Globe Awards</h6><span>33</span>
+                  </div>
+                  <div data-percent="33" class="skillbar-bg">
+                    <div class="custom-skillbar"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row item">
+            <h4>The Return of the King</h4>
+            <div class="medium-4 columns"><span data-percent="46" class="chart"><span class="percent">46</span></span></div>
+            <div class="medium-8 columns">
+              <ul class="skillbar-box animaper">
+                <li>
+                  <div class="text">
+                    <h6>Finalist</h6><span>50</span>
+                  </div>
+                  <div data-percent="50" class="skillbar-bg">
+                    <div class="custom-skillbar"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="text">
+                    <h6>Major awards</h6><span>50</span>
+                  </div>
+                  <div data-percent="50" class="skillbar-bg">
+                    <div class="custom-skillbar"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="text">
+                    <h6>Golden Globe Awards</h6><span>27</span>
+                  </div>
+                  <div data-percent="27" class="skillbar-bg">
+                    <div class="custom-skillbar"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="common-1 officers">
+        <div id="officers" class="location"></div>
+        <div class="container">
+          <div class="article-title">
+            <div data-top-bottom="transform: translateY(-300px);" data-bottom-top="transform: translateY(300px);" class="big-column">Officers</div>
+            <h6>2015 - 2016</h6>
+            <h2>Officers</h2>
+          </div>
+          <div class="list">
+            <div class="customNavigation fixed"><a class="next-slide"><i class="icon iconfont">&#xe603;</i></a><a class="prev-slide"><i class="icon iconfont">&#xe60b;</i></a></div>
+            <div class="owl-carousel owl-theme officers-list item">
+              <div class="row single clearfix">
+                <div class="medium-3 small-12 columns pic"><img src="images/oscars/oscars-officers-1.jpg" alt="Cheryl Boone Isaacs"></div>
+                <div class="medium-9 small-12 columns text">
+                  <h4>Cheryl Boone Isaacs</h4>
+                  <p>Ms. Boone Isaacs is a public relations executive and the former head of publicity at Paramount Pictures. She also served as president of theatrical marketing for New Line Cinema. Ms. Boone Isaacs is a governor of the Public Relations Branch.</p><a href="#" title="Cheryl Boone Isaacs">President</a>
+                </div>
+              </div>
+              <div class="row single clearfix">
+                <div class="medium-3 small-12 columns pic"><img src="images/oscars/oscars-officers-2.jpg" alt="Jeffrey Kurland"></div>
+                <div class="medium-9 small-12 columns text">
+                  <h4>Jeffrey Kurland</h4>
+                  <p>Mr. Kurland’s recent feature film credits include “Tomorrowland,” “Beautiful Creatures” and “Inception.” He earned an Oscar nomination for his work on “Bullets over Broadway.” Mr. Kurland is a governor of the Costume Designers Branch.</p><a href="#" title="Jeffrey Kurland">Vice President</a>
+                </div>
+              </div>
+              <div class="row single clearfix">
+                <div class="medium-3 small-12 columns pic"><img src="images/oscars/oscars-officers-3.jpg" alt="Jim Gianopulos"></div>
+                <div class="medium-9 small-12 columns text">
+                  <h4>Jim Gianopulos</h4>
+                  <p>Mr. Gianopulos is the chairman and CEO of 20th Century Fox, overseeing film production, marketing and distribution of content in all media. He also works with emerging technologies and represents the studio in industry matters and key charitable efforts. Mr. Gianopulos is a governor of the Executives Branch.</p><a href="#" title="Jim Gianopulos">Treasurer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="footer-height"></div>
+    <footer role="contentinfo" class="footer clearfix">
+      <div class="grid-block medium-up-3 small-up-1 column clearfix">
+        <div class="column">
+          <h4>Find me</h4>
+          <ul class="find clearfix">
+            <li><a href="#" title="qq" target="_blank" class="to-top"><i class="icon iconfont">&#xe60a</i></a></li>
+            <li><a href="#" title="github" target="_blank" class="to-top"><i class="icon iconfont">&#xe605</i></a></li>
+            <li><a href="#" title="facebook" target="_blank" class="to-top"><i class="icon iconfont">&#xe600</i></a></li>
+            <li><a href="#" title="pinterest" target="_blank" class="to-top"><i class="icon iconfont">&#xe602</i></a></li>
+            <li><a href="#" title="linkin" target="_blank" class="to-top"><i class="icon iconfont">&#xe609</i></a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Contact info</h4>
+          <ul class="contact">
+            <li><i class="icon iconfont">&#xe60c</i>www.oscars.org</li>
+            <li><i class="icon iconfont">&#xe607</i>(310)247 - 3000</li>
+            <li><i class="icon iconfont">&#xe60f</i>8949 Wilshire Boulevard</li>
+            <li><i class="icon iconfont">&#xe60e</i>mail.oscars.org</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>careers</h4>
+          <div class="careers">
+            <p><b>The Academy</b> is a nonprofit organization with approximately 300 employees.</p>
+            <p><b>The Academy</b> is committed to equal opportunity in employment and to creating, managing and valuing diversity in its workforce.</p>
+          </div>
+        </div>
+      </div>
+      <div class="to-top-holder"><small>©2016 - Other websites All Rights Reserv</small><a href="#home" title="go top" class="to-top"><i class="icon iconfont">&#xe606;</i></a></div>
+    </footer>
+    <script src="scripts/vendor.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+      $(document).ready(function() {
+      	var ml = $(".museum-list");
+      	ml.owlCarousel({
+      		items: 3,
+      		nav: false,
+      		dots:false,
+      		responsive: {
+      			0: {
+      					items: 1,
+      					nav: false
+      			},
+      			756: {
+      					items: 2,
+      					nav: false
+      			},
+      			1036: {
+      					items: 2,
+      					nav: false
+      			},
+      			1236: {
+      					items: 3,
+      					nav: false
+      			}
+      		}
+      	});
+      
+      	var ol = $(".officers-list");
+      	ol.owlCarousel({
+      		items: 1,
+      		nav: false,
+      		dots:false,
+      	});
+      	$(".customNavigation a.next-slide").on("click", function() {
+      			$(this).closest(".list").find('.owl-carousel').trigger("next.owl.carousel");
+      	});
+      	$(".customNavigation a.prev-slide").on("click", function() {
+      			$(this).closest(".list").find('.owl-carousel').trigger("prev.owl.carousel");
+      	});
+      
+      	$(".animaper").appear();
+      	$(document.body).on("appear", ".piechart-holder", function() {
+      			$(this).find(".chart").each(function() {
+      					var a = $(".piechart-holder").data("skcolor");
+      					$(this).easyPieChart({
+      							barColor: a,
+      							trackColor: "#eee",
+      							scaleColor: "#9ACFB7",
+      							size: "150",
+      							lineWidth: "5",
+      							onStep: function(a, b, c) {
+      									$(this.el).find(".percent").text(Math.round(c));
+      							}
+      					});
+      			});
+      	});
+      	$(document.body).on("appear", ".skillbar-box", function() {
+      			$(this).find("div.skillbar-bg").each(function() {
+      					$(this).find(".custom-skillbar").delay(600).animate({
+      							width: $(this).attr("data-percent") + '%'
+      					}, 1500);
+      			});
+      	});
+      	var i = 1;
+      	$(document.body).on("appear", ".stats", function(a) {
+      			if (1 === i) k(2600);
+      			i++;
+      	});
+      	function j(a, b, c, d) {
+      			if (d) {
+      					var e = 0;
+      					var f = parseInt(d / a);
+      					var g = setInterval(function() {
+      							if (e - 1 < a) c.html(e); else {
+      									c.html(b);
+      									clearInterval(g);
+      							}
+      							e++;
+      					}, f);
+      			} else c.html(b);
+      	}
+      	function k(a) {
+      			$(".stats .num").each(function() {
+      					var b = $(this);
+      					var c = b.attr("data-num");
+      					var d = b.attr("data-content");
+      					j(c, d, b, a);
+      			});
+      	}
+      
+      	function initparallax() {
+      		var a = {
+      			Android: function() {
+      				return navigator.userAgent.match(/Android/i);
+      			},
+      			BlackBerry: function() {
+      				return navigator.userAgent.match(/BlackBerry/i);
+      			},
+      			iOS: function() {
+      				return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      			},
+      			Opera: function() {
+      				return navigator.userAgent.match(/Opera Mini/i);
+      			},
+      			Windows: function() {
+      				return navigator.userAgent.match(/IEMobile/i);
+      			},
+      			any: function() {
+      				return a.Android() || a.BlackBerry() || a.iOS() || a.Opera() || a.Windows();
+      			}
+      		};
+      		trueMobile = a.any();
+      		if (null == trueMobile) {
+      			var b = $("body");
+      			b.find("[data-top-bottom]").length > 0 && b.waitForImages(function() {
+      				s = skrollr.init();
+      				s.destroy();
+      				skrollr.init({
+      					forceHeight: !1,
+      					easing: "outCubic",
+      					mobileCheck: function() {
+      							return !1;
+      					}
+      				});
+      			});
+      		}
+      		if (trueMobile) {
+      			$(".background-video").remove();
+      			$('.grid-item-holder').attr("onclick","return true");
+      		}
+      	}
+      
+      	initparallax();
+      });
+    </script>
+  </body>
+</html>
